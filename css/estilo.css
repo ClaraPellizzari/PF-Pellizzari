@@ -4,7 +4,7 @@
     padding: 0;
 }
 .contenedor {
-    max-width: 1200px;
+    max-width: 1600px;
     width: 100%;
     margin: 0 auto;
     background-color: white;
@@ -83,6 +83,7 @@
     justify-content: center;
     flex-wrap: wrap;
     align-self: left;
+
 }
 
 .col-sobremi p {
@@ -125,6 +126,16 @@
         flex-basis: 50%;
         margin-top: none;
     }
+    .col-sobremi h2 {
+        font-size: 25px;
+    }
+    .col-sobremi p{
+        font-size: 16px;
+    }
+
+    .boton-conoceme {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -140,8 +151,16 @@
         margin-top: none;
     }
 
+    .col-sobremi h2 {
+        font-size: 20px;
+    }
+    .col-sobremi p{
+        font-size: 14px;
+    }
+.boton-conoceme {
+    font-size: 14px;
+    }
 }
-
 /*servicios*/
 
 #servicios {
@@ -221,6 +240,17 @@
         flex-basis: 50%;
         margin-top: none;
     }
+
+    .col-servicios h2{
+        font-size: 25px;
+    }
+
+    .col-servicios p{
+        font-size: 16px;
+    }
+    .boton-ver-todos {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -233,8 +263,17 @@
         flex-basis: 100%;
         margin-top: none;
     }
-}
+    .col-servicios h2{
+        font-size: 20px;
+    }
 
+    .col-servicios p{
+        font-size: 14px;
+    }
+    .boton-ver-todos {
+        font-size: 14px;
+    }
+}
 
 
 /*clientes*/
@@ -321,6 +360,12 @@
         align-items: center;
         gap: 0px; 
     }
+    #titulo h2{
+        font-size: 25px;
+    }
+    .boton-conocer-todos {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -330,6 +375,12 @@
         justify-items: center;
         align-items: center;
         gap: 0px;
+    }
+    #titulo h2{
+        font-size: 20px;
+    }
+    .boton-conocer-todos {
+        font-size: 14px;
     }
 }
 
@@ -459,30 +510,39 @@ ul {
 }
 
 #sobremi {
-    background-color: #B891B5;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
+    background-color:#B891B5;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     padding: 10px;
+    padding-bottom: 0px;
     border: 0px;
     margin: 0px;
 }
 
 #sobremi .columna {
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-basis: 50%;
+    flex-wrap: wrap;
     max-width: 100%;
-    margin:75px;
+    margin:20px;
 }
 
 .perfil {
     flex-grow: 1;
-    width: 100%; 
+    width: 50%; 
     height: auto;
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
+    align-self: center;
     padding: 10px;
 }
 
@@ -502,27 +562,44 @@ ul {
     margin-bottom: 20px;
 }
 
-#informacion {
-    background-color: white;
+#continuación {
+    background-color: #B891B5;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
-    gap: 20px; /* Espacio entre elementos */
+    grid-template-columns: 1fr; 
+    gap: 20px; 
     align-items: center;
     justify-content: space-evenly;
-    padding: 10px;
-    border: 0px;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-top: 0px;
+    border-top: 0px;
     margin: 0px;
 }
 
-
-#informacion .columna2 {
-    flex-direction: column;
-    justify-content: center;
-    max-width: 100%;
-    margin:75px;
+.hobby p{
+    flex-grow: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
-.columna2 h2 {
+#informacion {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px; /* Espacio entre elementos */
+    align-items:  start;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-top: 0px;
+    margin: 50px;
+}
+
+.Aptitudes {
+    align-self: start;
+}
+
+.Aptitudes h2 {
     flex-grow: 1;
     color:black;
     font-family: 'Montserrat', sans-serif;
@@ -531,7 +608,83 @@ ul {
     margin-bottom: 10px;
 }
 
-.columna2 p {
+.Aptitudes ul {
+    flex-grow: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    list-style-type: disc; /* Agrega puntos redondos */
+    margin-left: 20px;
+}
+
+.Experiencia {
+    align-self: start;
+}
+
+.Experiencia h2 {
+    flex-grow: 1;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}  
+
+.Experiencia ul{
+    list-style-type: disc;/
+    margin-left: 20px;
+    flex-grow: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#trabajo {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px; /* Espacio entre elementos */
+    align-items:  start;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-top: 0px;
+    margin: 50px;
+}
+
+.trab-exp {
+    align-self: start;
+}
+
+.trab-exp h2 {
+    flex-grow: 1;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.trab-exp p {
+    flex-grow: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.proyectos {
+    align-self: start;
+}
+
+.proyectos h2 {
+    flex-grow: 1;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}  
+
+.proyectos p{
     flex-grow: 1;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
@@ -554,6 +707,54 @@ ul {
         align-items: center;
         gap: 0px; 
     }
+    #continuación {
+        display: grid;
+        grid-template-columns: 1fr; 
+        justify-items: center;
+        align-items: center;
+        gap: 0px; 
+    }
+    #trabajo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        justify-items: center;
+        align-items: center;
+        gap: 0px; 
+    }
+    .columna h2 {
+        font-size: 25px;
+    }
+    .columna p {
+        font-size: 16px;
+    }
+    .hobby p {
+        font-size: 16px;
+    }
+
+    .Aptitudes h2 {
+        font-size: 25px;
+    }
+    .Aptitudes ul {
+        font-size: 16px;
+    }
+    .Experiencia h2 {
+        font-size: 25px;
+    }
+    .Experiencia ul {
+        font-size: 16px;
+    }
+    .trab-exp h2 {
+        font-size: 25px;
+    }
+    .trab-exp p {
+        font-size: 16px;
+    }
+    .proyectos h2 {
+        font-size: 25px;
+    }
+    .proyectos p {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -570,6 +771,55 @@ ul {
         justify-items: center;
         align-items: center;
         gap: 0px; 
+    }
+    #continuación {
+        display: grid;
+        grid-template-columns: 1fr; 
+        justify-items: center;
+        align-items: center;
+        gap: 0px; 
+    }
+
+    #trabajo {
+        display: grid;
+        grid-template-columns: 1fr; 
+        justify-items: center;
+        align-items: center;
+        gap: 0px; 
+    }
+    .columna h2{
+        font-size: 20px;
+    }
+    .columna p{
+        font-size: 14px;
+    }
+    .hobby p{
+        font-size: 14px;
+    }
+
+    .Aptitudes h2 {
+        font-size: 20px;
+    }
+    .Aptitudes ul {
+        font-size: 14px;
+    }
+    .Experiencia h2 {
+        font-size: 20px;
+    }
+    .Experiencia ul {
+        font-size: 14px;
+    }
+    .trab-exp h2 {
+        font-size: 20px;
+    }
+    .trab-exp p {
+        font-size: 14px;
+    }
+    .proyectos h2 {
+        font-size: 20px;
+    }
+    .proyectos p {
+        font-size: 14px;
     }
 }
 
