@@ -1086,6 +1086,11 @@ ul {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
+    &:hover {
+        color: #B891B5;
+        opacity: 1;
+        transition: all .5s;
+    }
     }
     p {
         font-family: 'Montserrat', sans-serif;
@@ -1111,6 +1116,11 @@ ul {
     padding-top: 40px;
     padding-left: 0px;
     color: #000000;
+    &:hover {
+        color: #B891B5;
+        opacity: 1;
+        transition: all .5s;
+    }
     }
     p {
         font-family: 'Montserrat', sans-serif;
@@ -1150,6 +1160,11 @@ ul {
     padding-top: 40px;
     padding-left: 0px;
     color: #000000;
+    &:hover {
+        color: #B891B5;
+        opacity: 1;
+        transition: all .5s;
+    }
     }
     p {
         font-family: 'Montserrat', sans-serif;
@@ -1183,6 +1198,11 @@ ul {
     padding-top: 40px;
     padding-left: 0px;
     color: #000000;
+    &:hover {
+        color: #B891B5;
+        opacity: 1;
+        transition: all .5s;
+    }
     }
     p {
         font-family: 'Montserrat', sans-serif;
