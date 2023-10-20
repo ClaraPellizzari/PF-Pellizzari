@@ -13,6 +13,9 @@
     width: 200px;
     height: auto; 
 }
+.seo h1 {
+    display: none;
+  }
 /* imagen de portada */
 .portada-index {
     display: flex;
@@ -615,7 +618,7 @@ ul {
     h2 {
         flex-grow: 1;
         color:black;
-        font-family: 'Montserrat', sans-serif;
+        font-family:'Montserrat', sans-serif;
         font-size: 30px;
         font-weight: bold;
         margin-bottom: 10px;
@@ -625,7 +628,7 @@ ul {
             transition: all .5s;
         }
     }
-    .proyectos p{
+    p {
         flex-grow: 1;
         font-family: 'Montserrat', sans-serif;
         font-size: 20px;
@@ -823,6 +826,7 @@ ul {
         margin-right: auto;
         &:hover {
             transform: scale(1.2);
+            transition: .5s;
         }
     }
     h2 {
@@ -864,6 +868,7 @@ ul {
     margin-right: auto;
     &:hover {
         transform: scale(1.2);
+        transition: .5s;
     }
 
 }
@@ -908,6 +913,7 @@ ul {
     margin-right: auto;
     &:hover {
         transform: scale(1.2);
+        transition: .5s;
     }
 }
 .columna5 {
@@ -1078,6 +1084,10 @@ ul {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    &:hover {
+        transform: scale(1.2);
+        transition: .5s;
+    }
 }
 .col-cliente2 {
     h3 {
@@ -1134,6 +1144,10 @@ ul {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    &:hover {
+        transform: scale(1.2);
+        transition: .5s;
+    }
 }
 #clientes4 {
     background-color: white;
@@ -1151,6 +1165,10 @@ ul {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    &:hover {
+        transform: scale(1.2);
+        transition: .5s;
+    }
 }
 .col-cliente6 {
     h3 {
@@ -1189,6 +1207,10 @@ ul {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    &:hover {
+        transform: scale(1.2);
+        transition: .5s;
+    }
 }
 .col-cliente7 {
     h3 {

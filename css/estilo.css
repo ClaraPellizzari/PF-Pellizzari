@@ -1,27 +1,23 @@
 @charset "UTF-8";
 /* Nav Bar */
-/* line 2, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
-/* line 6, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .contenedor {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
-  background-color: white;
-}
+  background-color: white; }
 
-/* line 12, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .cp-horizontal {
   width: 200px;
-  height: auto;
-}
+  height: auto; }
+
+.seo h1 {
+  display: none; }
 
 /* imagen de portada */
-/* line 17, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .portada-index {
   display: flex;
   flex-direction: row;
@@ -29,12 +25,10 @@
   align-items: center;
   background-color: black;
   width: 100%;
-  height: auto;
-}
+  height: auto; }
 
 /*body*/
 /*sobre mi*/
-/* line 29, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #sobre-mi {
   background-color: #B891B5;
   display: flex;
@@ -47,17 +41,12 @@
   padding: 10px;
   border: 0px;
   margin: 0px;
-  transition: background-color 4s;
-}
+  transition: background-color 4s; }
+  #sobre-mi:hover {
+    background-color: white;
+    opacity: 1;
+    transition: all 4s; }
 
-/* line 42, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-#sobre-mi:hover {
-  background-color: white;
-  opacity: 1;
-  transition: all 4s;
-}
-
-/* line 48, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .col-sobremi {
   display: flex;
   flex-direction: column;
@@ -65,10 +54,8 @@
   flex-basis: 50%;
   flex-wrap: wrap;
   max-width: 100%;
-  margin: 20px;
-}
+  margin: 20px; }
 
-/* line 57, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .foto-perfil {
   flex-grow: 1;
   width: 50%;
@@ -78,10 +65,8 @@
   justify-content: center;
   flex-wrap: wrap;
   align-self: center;
-  padding: 10px;
-}
+  padding: 10px; }
 
-/* line 69, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .col-sobremi h2 {
   flex-grow: 1;
   color: black;
@@ -93,23 +78,17 @@
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  align-self: left;
-}
+  align-self: left; }
 
-/* line 82, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .col-sobremi p {
   flex-grow: 1;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
-/* line 88, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .col-sobremi a {
-  align-self: self-start;
-}
+  align-self: self-start; }
 
-/* line 92, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .boton-conoceme {
   flex-grow: 1;
   text-decoration: none;
@@ -119,71 +98,45 @@
   font-size: 18px;
   font-weight: bold;
   padding: 10px 20px;
-  border-radius: 5px;
-}
+  border-radius: 5px; }
 
-/* line 103, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .boton-conoceme:hover {
   background-color: #B891B5;
-  color: white;
-}
+  color: white; }
 
 @media (max-width: 1199px) {
-  /* line 108, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
   #sobre-mi {
     flex-direction: row;
     flex-basis: 50%;
-    padding: 10px;
-  }
-  /* line 113, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    padding: 10px; }
   .col-sobremi {
     justify-content: center;
     flex-basis: 50%;
-    margin-top: none;
-  }
-  /* line 118, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    margin-top: none; }
   .col-sobremi h2 {
-    font-size: 25px;
-  }
-  /* line 121, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 25px; }
   .col-sobremi p {
-    font-size: 16px;
-  }
-  /* line 124, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 16px; }
   .boton-conoceme {
-    font-size: 16px;
-  }
-}
+    font-size: 16px; } }
 
 @media (max-width: 767px) {
-  /* line 129, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
   #sobre-mi {
     flex-direction: column;
     flex-basis: 100%;
-    padding: 10px;
-  }
-  /* line 134, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    padding: 10px; }
   .col-sobremi {
     justify-content: center;
     flex-basis: 100%;
-    margin-top: none;
-  }
-  /* line 139, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    margin-top: none; }
   .col-sobremi h2 {
-    font-size: 20px;
-  }
-  /* line 142, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 20px; }
   .col-sobremi p {
-    font-size: 14px;
-  }
-  /* line 145, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 14px; }
   .boton-conoceme {
-    font-size: 14px;
-  }
-}
+    font-size: 14px; } }
 
 /*servicios*/
-/* line 150, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #servicios {
   background-color: white;
   display: grid;
@@ -194,17 +147,12 @@
   padding: 10px;
   border: 0;
   margin: 0;
-  transition: background-color 4s;
-}
+  transition: background-color 4s; }
+  #servicios:hover {
+    background-color: #B891B5;
+    opacity: 1;
+    transition: all 4s; }
 
-/* line 161, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-#servicios:hover {
-  background-color: #B891B5;
-  opacity: 1;
-  transition: all 4s;
-}
-
-/* line 167, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .col-servicios {
   display: flex;
   flex-direction: column;
@@ -212,28 +160,20 @@
   flex-basis: 50%;
   flex-wrap: wrap;
   max-width: 100%;
-  margin: 20px;
-}
+  margin: 20px; }
+  .col-servicios h2 {
+    flex-grow: 1;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .col-servicios p {
+    flex-grow: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px; }
 
-/* line 175, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-.col-servicios h2 {
-  flex-grow: 1;
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* line 183, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-.col-servicios p {
-  flex-grow: 1;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-/* line 190, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .boton-ver-todos {
   align-self: self-start;
   text-decoration: none;
@@ -243,16 +183,12 @@
   font-size: 20px;
   background-color: #B891B5;
   padding: 10px 20px;
-  border-radius: 5px;
-}
+  border-radius: 5px; }
 
-/* line 201, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .boton-ver-todos:hover {
   background-color: #ffffff;
-  color: #B891B5;
-}
+  color: #B891B5; }
 
-/* line 205, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .foto-servicios {
   flex-grow: 1;
   width: 50%;
@@ -262,61 +198,37 @@
   justify-content: center;
   flex-wrap: wrap;
   align-self: center;
-  padding: 10px;
-}
+  padding: 10px; }
 
 @media (max-width: 1199px) {
-  /* line 217, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
   #servicios {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    padding: 10px;
-  }
-  /* line 221, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    padding: 10px; }
   .col-servicios {
     flex-basis: 50%;
-    margin-top: none;
-  }
-  /* line 225, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    margin-top: none; }
   .col-servicios h2 {
-    font-size: 25px;
-  }
-  /* line 228, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 25px; }
   .col-servicios p {
-    font-size: 16px;
-  }
-  /* line 231, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 16px; }
   .boton-ver-todos {
-    font-size: 16px;
-  }
-}
+    font-size: 16px; } }
 
 @media (max-width: 767px) {
-  /* line 236, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
   #servicios {
     grid-template-columns: 1fr;
-    padding: 10px;
-  }
-  /* line 241, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    padding: 10px; }
   .col-servicios {
     flex-basis: 100%;
-    margin-top: none;
-  }
-  /* line 245, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    margin-top: none; }
   .col-servicios h2 {
-    font-size: 20px;
-  }
-  /* line 249, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 20px; }
   .col-servicios p {
-    font-size: 14px;
-  }
-  /* line 252, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 14px; }
   .boton-ver-todos {
-    font-size: 14px;
-  }
-}
+    font-size: 14px; } }
 
 /*clientes*/
-/* line 257, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #titulo {
   text-align: left;
   background-color: #B891B5;
@@ -329,19 +241,14 @@
   justify-content: left;
   padding: 20px;
   border: 0px;
-  margin: 0px;
-}
+  margin: 0px; }
+  #titulo h2 {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #000000; }
 
-/* line 270, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-#titulo h2 {
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  margin-bottom: 10px;
-  color: #000000;
-}
-
-/* line 278, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #clientes {
   display: flex;
   flex-direction: row;
@@ -352,17 +259,12 @@
   flex-wrap: wrap;
   background-color: #B891B5;
   padding: 20px;
-  margin: 0;
-}
+  margin: 0; }
+  #clientes img {
+    width: 100px;
+    height: auto;
+    margin: 10px; }
 
-/* line 289, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-#clientes img {
-  width: 100px;
-  height: auto;
-  margin: 10px;
-}
-
-/* line 295, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #boton {
   background-color: #B891B5;
   display: flex;
@@ -374,10 +276,8 @@
   justify-content: left;
   padding: 20px;
   border: 0px;
-  margin: 0px;
-}
+  margin: 0px; }
 
-/* line 308, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .boton-conocer-todos {
   text-decoration: none;
   color: #B891B5;
@@ -386,54 +286,36 @@
   font-size: 18px;
   background-color: #ffffff;
   padding: 10px 20px;
-  border-radius: 5px;
-}
+  border-radius: 5px; }
 
-/* line 318, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .boton-conocer-todos:hover {
   background-color: #C9ACC7;
-  color: #ffffff;
-}
+  color: #ffffff; }
 
 @media (max-width: 1199px) {
-  /* line 323, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
   #clientes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 330, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   #titulo h2 {
-    font-size: 25px;
-  }
-  /* line 333, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 25px; }
   .boton-conocer-todos {
-    font-size: 16px;
-  }
-}
+    font-size: 16px; } }
 
 @media (max-width: 767px) {
-  /* line 338, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
   #clientes {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 345, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   #titulo h2 {
-    font-size: 20px;
-  }
-  /* line 348, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 20px; }
   .boton-conocer-todos {
-    font-size: 14px;
-  }
-}
+    font-size: 14px; } }
 
-/* line 352, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 ------------------------FOOTER----------------------------------------
 footer {
   display: grid;
@@ -443,10 +325,8 @@ footer {
   background-color: #000000;
   padding: 20px;
   margin: 0;
-  border: 0;
-}
+  border: 0; }
 
-/* line 364, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #pie {
   grid-column: 2;
   /* Establece esta sección en la segunda columna */
@@ -457,48 +337,36 @@ footer {
   flex-wrap: wrap;
   background-color: #000000;
   padding: 20px;
-  margin: 0;
-}
+  margin: 0; }
 
-/* line 375, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .cp-vertical {
   width: 100px;
   height: auto;
-  margin: 10px;
-}
+  margin: 10px; }
 
-/* line 380, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #pie a {
   color: #ffffff;
   font-style: normal;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-}
+  font-size: 12px; }
 
-/* line 387, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 ul {
-  list-style-type: none;
-}
+  list-style-type: none; }
 
-/* line 390, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #pie a:hover {
   color: #B891B5;
   font-style: normal;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-}
+  font-size: 12px; }
 
-/* line 396, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .col3 {
   color: #ffffff;
   font-style: normal;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-}
+  font-size: 12px; }
 
-/* line 403, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .derechos {
   grid-column: span 3;
   display: grid;
@@ -510,49 +378,37 @@ ul {
   color: #B891B5;
   font-style: normal;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 @media (max-width: 1199px) {
-  /* line 417, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
   #pie {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex-basis: 50%;
     justify-content: space-evenly;
-    margin-top: none;
-  }
-}
+    margin-top: none; } }
 
 @media (max-width: 767px) {
-  /* line 427, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
   #pie {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     flex-basis: 50%;
-    margin-top: none;
-  }
-}
+    margin-top: none; } }
 
 /*sobre-mi-html*/
-/* line 437, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
-/* line 441, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .contenedor2 {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
-  background-color: white;
-}
+  background-color: white; }
 
-/* line 447, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .portada-sobremi {
   display: flex;
   flex-direction: row;
@@ -560,10 +416,8 @@ ul {
   align-items: center;
   background-color: black;
   width: 100%;
-  height: auto;
-}
+  height: auto; }
 
-/* line 456, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #sobremi {
   background-color: #B891B5;
   display: flex;
@@ -576,21 +430,16 @@ ul {
   padding: 10px;
   padding-bottom: 0px;
   border: 0px;
-  margin: 0px;
-}
+  margin: 0px; }
+  #sobremi .columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 20px; }
 
-/* line 469, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-#sobremi .columna {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-basis: 50%;
-  flex-wrap: wrap;
-  max-width: 100%;
-  margin: 20px;
-}
-
-/* line 479, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .perfil {
   flex-grow: 1;
   width: 50%;
@@ -600,28 +449,22 @@ ul {
   justify-content: center;
   flex-wrap: wrap;
   align-self: center;
-  padding: 10px;
-}
+  padding: 10px; }
 
-/* line 491, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .columna h2 {
   flex-grow: 1;
   color: black;
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
-/* line 499, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .columna p {
   flex-grow: 1;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
-/* line 506, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #continuación {
   background-color: #B891B5;
   display: grid;
@@ -633,18 +476,14 @@ ul {
   padding-right: 27px;
   padding-top: 0px;
   border-top: 0px;
-  margin: 0px;
-}
+  margin: 0px; }
 
-/* line 519, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .hobby p {
   flex-grow: 1;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
-/* line 525, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #informacion {
   background-color: white;
   display: grid;
@@ -656,68 +495,47 @@ ul {
   padding: 50px;
   border-top: 0px;
   margin: 0px;
-  transition: background-color 2s;
-}
+  transition: background-color 2s; }
+  #informacion:hover {
+    background-color: #B891B5;
+    opacity: 1;
+    transition: all 2s; }
 
-/* line 536, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-#informacion:hover {
-  background-color: #B891B5;
-  opacity: 1;
-  transition: all 2s;
-}
-
-/* line 542, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .Aptitudes {
-  align-self: start;
-}
+  align-self: start; }
+  .Aptitudes h2 {
+    flex-grow: 1;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .Aptitudes ul {
+    flex-grow: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    list-style-type: disc;
+    /* Agrega puntos redondos */
+    margin-left: 20px; }
 
-/* line 544, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-.Aptitudes h2 {
-  flex-grow: 1;
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* line 552, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-.Aptitudes ul {
-  flex-grow: 1;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  margin-bottom: 20px;
-  list-style-type: disc;
-  /* Agrega puntos redondos */
-  margin-left: 20px;
-}
-
-/* line 561, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .Experiencia {
-  align-self: start;
-}
+  align-self: start; }
+  .Experiencia h2 {
+    flex-grow: 1;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .Experiencia ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    flex-grow: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px; }
 
-/* line 563, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-.Experiencia h2 {
-  flex-grow: 1;
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* line 571, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-.Experiencia ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  flex-grow: 1;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-/* line 580, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #trabajo {
   background-color: white;
   display: grid;
@@ -728,243 +546,153 @@ ul {
   justify-content: space-evenly;
   padding: 10px;
   border-top: 0px;
-  margin: 50px;
-}
+  margin: 50px; }
 
-/* line 591, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .trab-exp {
-  align-self: start;
-}
+  align-self: start; }
+  .trab-exp h2 {
+    flex-grow: 1;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+    .trab-exp h2:hover {
+      color: #B891B5;
+      opacity: 1;
+      transition: all .5s; }
+  .trab-exp p {
+    flex-grow: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px; }
 
-/* line 593, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-.trab-exp h2 {
-  flex-grow: 1;
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* line 600, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-.trab-exp h2:hover {
-  color: #B891B5;
-  opacity: 1;
-  transition: all .5s;
-}
-
-/* line 606, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-.trab-exp p {
-  flex-grow: 1;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-/* line 613, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .proyectos {
-  align-self: start;
-}
-
-/* line 615, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-.proyectos h2 {
-  flex-grow: 1;
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* line 622, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-.proyectos h2:hover {
-  color: #B891B5;
-  opacity: 1;
-  transition: all .5s;
-}
-
-/* line 628, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-.proyectos .proyectos p {
-  flex-grow: 1;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
+  align-self: start; }
+  .proyectos h2 {
+    flex-grow: 1;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+    .proyectos h2:hover {
+      color: #B891B5;
+      opacity: 1;
+      transition: all .5s; }
+  .proyectos p {
+    flex-grow: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px; }
 
 @media (max-width: 1199px) {
-  /* line 637, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
   #sobremi {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 644, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   #informacion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 651, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   #continuación {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 658, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   #trabajo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 665, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   .columna h2 {
-    font-size: 25px;
-  }
-  /* line 668, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 25px; }
   .columna p {
-    font-size: 16px;
-  }
-  /* line 671, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 16px; }
   .hobby p {
-    font-size: 16px;
-  }
-  /* line 675, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 16px; }
   .Aptitudes h2 {
-    font-size: 25px;
-  }
-  /* line 678, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 25px; }
   .Aptitudes ul {
-    font-size: 16px;
-  }
-  /* line 681, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 16px; }
   .Experiencia h2 {
-    font-size: 25px;
-  }
-  /* line 684, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 25px; }
   .Experiencia ul {
-    font-size: 16px;
-  }
-  /* line 687, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 16px; }
   .trab-exp h2 {
-    font-size: 25px;
-  }
-  /* line 690, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 25px; }
   .trab-exp p {
-    font-size: 16px;
-  }
-  /* line 693, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 16px; }
   .proyectos h2 {
-    font-size: 25px;
-  }
-  /* line 696, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 25px; }
   .proyectos p {
-    font-size: 16px;
-  }
-}
+    font-size: 16px; } }
 
 @media (max-width: 767px) {
-  /* line 701, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
   #sobremi {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 708, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   #informacion {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 715, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   #continuación {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 722, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   #trabajo {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 729, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   .columna h2 {
-    font-size: 20px;
-  }
-  /* line 732, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 20px; }
   .columna p {
-    font-size: 14px;
-  }
-  /* line 735, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 14px; }
   .hobby p {
-    font-size: 14px;
-  }
-  /* line 738, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 14px; }
   .Aptitudes h2 {
-    font-size: 20px;
-  }
-  /* line 741, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 20px; }
   .Aptitudes ul {
-    font-size: 14px;
-  }
-  /* line 744, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 14px; }
   .Experiencia h2 {
-    font-size: 20px;
-  }
-  /* line 747, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 20px; }
   .Experiencia ul {
-    font-size: 14px;
-  }
-  /* line 750, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 14px; }
   .trab-exp h2 {
-    font-size: 20px;
-  }
-  /* line 753, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 20px; }
   .trab-exp p {
-    font-size: 14px;
-  }
-  /* line 756, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 14px; }
   .proyectos h2 {
-    font-size: 20px;
-  }
-  /* line 759, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 20px; }
   .proyectos p {
-    font-size: 14px;
-  }
-}
+    font-size: 14px; } }
 
 /*servicios-html*/
-/* line 764, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
-/* line 768, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .contenedor {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
-  background-color: white;
-}
+  background-color: white; }
 
-/* line 774, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .portada-servicios {
   display: flex;
   flex-direction: row;
@@ -972,10 +700,8 @@ ul {
   align-items: center;
   background-color: black;
   width: 100%;
-  height: auto;
-}
+  height: auto; }
 
-/* line 783, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #servicios1 {
   background-color: #C9ACC7;
   display: grid;
@@ -985,20 +711,15 @@ ul {
   text-align: center;
   justify-content: center;
   padding: 10px;
-  border-top: 0px;
-}
+  border-top: 0px; }
+  #servicios1 h1 {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding-top: 40px;
+    padding-left: 0px;
+    color: #000000; }
 
-/* line 793, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-#servicios1 h1 {
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  padding-top: 40px;
-  padding-left: 0px;
-  color: #000000;
-}
-
-/* line 802, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #servicios2 {
   background-color: #C9ACC7;
   display: grid;
@@ -1007,49 +728,33 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  border-top: 0px;
-}
+  border-top: 0px; }
+  #servicios2 .columna3 {
+    text-align: left;
+    align-content: center;
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px; }
+  #servicios2 .cm {
+    display: block;
+    width: 75%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; }
+    #servicios2 .cm:hover {
+      transform: scale(1.2);
+      transition: .5s; }
+  #servicios2 h2 {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  #servicios2 p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px; }
 
-/* line 811, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-#servicios2 .columna3 {
-  text-align: left;
-  align-content: center;
-  max-width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-/* line 818, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-#servicios2 .cm {
-  display: block;
-  width: 75%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 824, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-#servicios2 .cm:hover {
-  transform: scale(1.2);
-}
-
-/* line 828, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-#servicios2 h2 {
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* line 835, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-#servicios2 p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-/* line 842, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #servicios3 {
   background-color: #C9ACC7;
   display: grid;
@@ -1058,50 +763,37 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  border-top: 0px;
-}
+  border-top: 0px; }
+  #servicios3 .columna4 {
+    text-align: left;
+    align-content: center;
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px; }
 
-/* line 851, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-#servicios3 .columna4 {
-  text-align: left;
-  align-content: center;
-  max-width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-/* line 859, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .smm {
   display: block;
   width: 75%;
   height: auto;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
+  .smm:hover {
+    transform: scale(1.2);
+    transition: .5s; }
 
-/* line 865, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-.smm:hover {
-  transform: scale(1.2);
-}
-
-/* line 871, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .columna4 h2 {
   color: black;
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
-/* line 878, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .columna4 p {
   flex-grow: 1;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
-/* line 885, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #servicios4 {
   background-color: #C9ACC7;
   display: grid;
@@ -1111,185 +803,126 @@ ul {
   justify-content: space-between;
   padding: 10px;
   padding-bottom: 20px;
-  border-top: 0px;
-}
+  border-top: 0px; }
+  #servicios4 .columna5 {
+    text-align: left;
+    align-content: center;
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px; }
 
-/* line 895, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-#servicios4 .columna5 {
-  text-align: left;
-  align-content: center;
-  max-width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-/* line 903, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .pmm {
   display: block;
   width: 75%;
   height: auto;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
+  .pmm:hover {
+    transform: scale(1.2);
+    transition: .5s; }
 
-/* line 909, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-.pmm:hover {
-  transform: scale(1.2);
-}
-
-/* line 914, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .columna5 h2 {
   color: black;
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
-/* line 921, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .columna5 p {
   flex-grow: 1;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 @media (max-width: 1199px) {
-  /* line 929, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
   #servcios1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
     gap: 0px;
-    font-size: 25px;
-  }
-  /* line 937, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 25px; }
   #servicios2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 944, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   #servicios2 h3 {
-    font-size: 25px;
-  }
-  /* line 947, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 25px; }
   #servicios2 p {
-    font-size: 16px;
-  }
-  /* line 950, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 16px; }
   #servicios3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 957, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   .columna4 h3 {
-    font-size: 25px;
-  }
-  /* line 960, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 25px; }
   .columna4 p {
-    font-size: 16px;
-  }
-  /* line 963, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 16px; }
   #servicios4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 970, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   .columna5 h3 {
-    font-size: 25px;
-  }
-  /* line 973, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 25px; }
   .columna5 p {
-    font-size: 16px;
-  }
-}
+    font-size: 16px; } }
 
 @media (max-width: 767px) {
-  /* line 978, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
   #servcios1 {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
     gap: 0px;
-    font-size: 20px;
-  }
-  /* line 986, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 20px; }
   #servicios2 {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 993, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   #servicios2 h2 {
-    font-size: 20px;
-  }
-  /* line 996, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 20px; }
   #servicios2 p {
-    font-size: 14px;
-  }
-  /* line 999, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 14px; }
   #servicios3 {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 1006, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   .columna4 h2 {
-    font-size: 20px;
-  }
-  /* line 1009, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 20px; }
   .columna4 p {
-    font-size: 14px;
-  }
-  /* line 1012, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 14px; }
   #servicios4 {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 1019, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   .columna5 h2 {
-    font-size: 20px;
-  }
-  /* line 1022, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 20px; }
   .columna5 p {
-    font-size: 14px;
-  }
-}
+    font-size: 14px; } }
 
 /*clientes-html*/
-/* line 1027, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
-/* line 1031, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .contenedor {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
-  background-color: white;
-}
+  background-color: white; }
 
-/* line 1037, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .portada-clientes {
   display: flex;
   flex-direction: row;
@@ -1297,10 +930,8 @@ ul {
   align-items: center;
   background-color: black;
   width: 100%;
-  height: auto;
-}
+  height: auto; }
 
-/* line 1046, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #clientes1 {
   background-color: white;
   display: grid;
@@ -1310,20 +941,15 @@ ul {
   text-align: center;
   justify-content: center;
   padding: 10px;
-  border-top: 0px;
-}
+  border-top: 0px; }
+  #clientes1 h1 {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding-top: 40px;
+    padding-left: 0px;
+    color: #000000; }
 
-/* line 1056, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-#clientes1 h1 {
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  padding-top: 40px;
-  padding-left: 0px;
-  color: #000000;
-}
-
-/* line 1065, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #clientes2 {
   background-color: white;
   display: grid;
@@ -1332,42 +958,34 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  border-top: 0px;
-}
+  border-top: 0px; }
 
-/* line 1075, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .chanel1 {
   display: block;
   width: 50%;
   height: auto;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
+  .chanel1:hover {
+    transform: scale(1.2);
+    transition: .5s; }
 
-/* line 1083, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .col-cliente2 h3 {
   color: black;
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
+  .col-cliente2 h3:hover {
+    color: #B891B5;
+    opacity: 1;
+    transition: all .5s; }
 
-/* line 1089, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-.col-cliente2 h3:hover {
-  color: #B891B5;
-  opacity: 1;
-  transition: all .5s;
-}
-
-/* line 1095, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .col-cliente2 p {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
-/* line 1101, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #clientes3 {
   background-color: white;
   display: grid;
@@ -1376,43 +994,35 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  border-top: 0px;
-}
+  border-top: 0px; }
 
-/* line 1112, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .col-cliente3 h3 {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   padding-top: 40px;
   padding-left: 0px;
-  color: #000000;
-}
+  color: #000000; }
+  .col-cliente3 h3:hover {
+    color: #B891B5;
+    opacity: 1;
+    transition: all .5s; }
 
-/* line 1119, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-.col-cliente3 h3:hover {
-  color: #B891B5;
-  opacity: 1;
-  transition: all .5s;
-}
-
-/* line 1125, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .col-cliente3 p {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
-/* line 1131, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .adidas {
   display: block;
   width: 50%;
   height: auto;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
+  .adidas:hover {
+    transform: scale(1.2);
+    transition: .5s; }
 
-/* line 1138, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #clientes4 {
   background-color: white;
   display: grid;
@@ -1421,43 +1031,35 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  border-top: 0px;
-}
+  border-top: 0px; }
 
-/* line 1148, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .puma {
   display: block;
   width: 50%;
   height: auto;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
+  .puma:hover {
+    transform: scale(1.2);
+    transition: .5s; }
 
-/* line 1156, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .col-cliente6 h3 {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   padding-top: 40px;
   padding-left: 0px;
-  color: #000000;
-}
+  color: #000000; }
+  .col-cliente6 h3:hover {
+    color: #B891B5;
+    opacity: 1;
+    transition: all .5s; }
 
-/* line 1163, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-.col-cliente6 h3:hover {
-  color: #B891B5;
-  opacity: 1;
-  transition: all .5s;
-}
-
-/* line 1169, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .col-cliente6 p {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
-/* line 1176, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #clientes5 {
   background-color: white;
   display: grid;
@@ -1466,210 +1068,144 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  border-top: 0px;
-}
+  border-top: 0px; }
 
-/* line 1186, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .starbucks {
   display: block;
   width: 50%;
   height: auto;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
+  .starbucks:hover {
+    transform: scale(1.2);
+    transition: .5s; }
 
-/* line 1194, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .col-cliente7 h3 {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   padding-top: 40px;
   padding-left: 0px;
-  color: #000000;
-}
+  color: #000000; }
+  .col-cliente7 h3:hover {
+    color: #B891B5;
+    opacity: 1;
+    transition: all .5s; }
 
-/* line 1201, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-.col-cliente7 h3:hover {
-  color: #B891B5;
-  opacity: 1;
-  transition: all .5s;
-}
-
-/* line 1207, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .col-cliente7 p {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 @media (max-width: 1199px) {
-  /* line 1214, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
   #cliente1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
     gap: 0px;
-    font-size: 25px;
-  }
-  /* line 1222, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 25px; }
   #clientes2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 1229, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   .col-cliente2 h3 {
-    font-size: 25px;
-  }
-  /* line 1232, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 25px; }
   .col-cliente2 p {
-    font-size: 16px;
-  }
-  /* line 1235, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 16px; }
   #clientes3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 1242, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   .col-cliente3 h3 {
-    font-size: 25px;
-  }
-  /* line 1245, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 25px; }
   .col-cliente3 p {
-    font-size: 16px;
-  }
-  /* line 1249, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 16px; }
   #clientes4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 1256, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   .col-cliente6 h3 {
-    font-size: 25px;
-  }
-  /* line 1259, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 25px; }
   .col-cliente6 p {
-    font-size: 16px;
-  }
-  /* line 1263, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 16px; }
   #clientes5 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 1270, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   .col-cliente7 h3 {
-    font-size: 25px;
-  }
-  /* line 1273, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 25px; }
   .col-cliente7 p {
-    font-size: 16px;
-  }
-}
+    font-size: 16px; } }
 
 @media (max-width: 767px) {
-  /* line 1278, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
   #cliente1 {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
     gap: 0px;
-    font-size: 20px;
-  }
-  /* line 1286, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 20px; }
   #clientes2 {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 1293, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   .col-cliente2 h3 {
-    font-size: 20px;
-  }
-  /* line 1296, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 20px; }
   .col-cliente2 p {
-    font-size: 14px;
-  }
-  /* line 1299, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 14px; }
   #clientes3 {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 1306, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   .col-cliente3 h3 {
-    font-size: 20px;
-  }
-  /* line 1309, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 20px; }
   .col-cliente3 p {
-    font-size: 14px;
-  }
-  /* line 1312, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 14px; }
   #clientes4 {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 1319, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   .col-cliente6 h3 {
-    font-size: 20px;
-  }
-  /* line 1322, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 20px; }
   .col-cliente6 p {
-    font-size: 14px;
-  }
-  /* line 1325, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 14px; }
   #clientes5 {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    gap: 0px;
-  }
-  /* line 1332, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    gap: 0px; }
   .col-cliente7 h3 {
-    font-size: 20px;
-  }
-  /* line 1335, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 20px; }
   .col-cliente7 p {
-    font-size: 14px;
-  }
-}
+    font-size: 14px; } }
 
 /*contacto-html*/
-/* line 1341, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
-/* line 1345, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .contenedor {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
-  background-color: white;
-}
+  background-color: white; }
 
-/* line 1351, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .portada-contacto {
   display: flex;
   flex-direction: row;
@@ -1677,10 +1213,8 @@ ul {
   align-items: center;
   background-color: black;
   width: 100%;
-  height: auto;
-}
+  height: auto; }
 
-/* line 1360, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #contacto {
   background-color: #B891B5;
   display: grid;
@@ -1690,20 +1224,15 @@ ul {
   text-align: center;
   justify-content: center;
   padding: 10px;
-  border-top: 0px;
-}
+  border-top: 0px; }
+  #contacto h1 {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    padding-top: 40px;
+    padding-left: 0px;
+    color: #000000; }
 
-/* line 1370, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-#contacto h1 {
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 50px;
-  padding-top: 40px;
-  padding-left: 0px;
-  color: #000000;
-}
-
-/* line 1379, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 #text-contacto {
   background-color: #B891B5;
   display: grid;
@@ -1715,19 +1244,14 @@ ul {
   padding: 10px;
   padding-left: 300px;
   border-top: 0px;
-  border: 0px;
-}
+  border: 0px; }
+  #text-contacto p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: left;
+    align-self: flex-start; }
 
-/* line 1391, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
-#text-contacto p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
-  margin-bottom: 20px;
-  text-align: left;
-  align-self: flex-start;
-}
-
-/* line 1399, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .formulario {
   width: 100%;
   /* Hacer que el formulario ocupe el ancho completo */
@@ -1737,17 +1261,13 @@ ul {
   background-color: #F0F0F0;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
-/* line 1409, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .formulario label {
   display: block;
   font-weight: bold;
-  margin-bottom: 8px;
-}
+  margin-bottom: 8px; }
 
-/* line 1414, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .formulario input,
 .formulario textarea {
   width: 100%;
@@ -1755,31 +1275,23 @@ ul {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
-/* line 1423, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .formulario textarea {
-  height: 200px;
-}
+  height: 200px; }
 
-/* line 1426, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .formulario input[type="submit"] {
   background-color: #B891B5;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
-/* line 1434, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
 .formulario input[type="submit"]:hover {
-  background-color: #704D82;
-}
+  background-color: #704D82; }
 
 @media (max-width: 1199px) {
-  /* line 1438, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
   #contacto {
     display: grid;
     grid-template-columns: 1fr;
@@ -1787,9 +1299,7 @@ ul {
     align-items: center;
     gap: 0px;
     text-align: center;
-    font-size: 25px;
-  }
-  /* line 1447, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 25px; }
   #text-contacto {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1797,12 +1307,9 @@ ul {
     align-items: center;
     gap: 0px;
     font-size: 18px;
-    padding-left: 50px;
-  }
-}
+    padding-left: 50px; } }
 
 @media (max-width: 767px) {
-  /* line 1458, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
   #contacto {
     display: grid;
     grid-template-columns: 1fr;
@@ -1810,9 +1317,7 @@ ul {
     align-items: center;
     gap: 0px;
     text-align: center;
-    font-size: 20px;
-  }
-  /* line 1467, ../../Proyecto_coderhouse/Pre-entrega2/www.clarapellizzari.com.ar/sass/estilo.scss */
+    font-size: 20px; }
   #text-contacto {
     display: grid;
     grid-template-columns: 1fr;
@@ -1820,8 +1325,4 @@ ul {
     align-items: center;
     gap: 0px;
     font-size: 16px;
-    padding-left: 50px;
-  }
-}
-
-/*# sourceMappingURL=estilo.css.map */
+    padding-left: 50px; } }
